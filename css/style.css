@@ -1,0 +1,304 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+}
+
+.hello{
+  text-align: center;
+  margin: 10px;
+}
+#hello_w{
+  font-size: 3rem;
+}
+.thisis{
+  position: relative;
+  bottom: 10px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+.info{
+  flex-direction: row;
+  display: flex;
+}
+.about{
+  width: 100%;
+  flex: 0 0 70%;
+  justify-content: space-around;
+}
+.pic{
+  width: 100%;
+  flex: 0 0 30%;
+  justify-content: center;
+}
+.welcome {
+  width: 100%;
+  align-items: center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  height: 40px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.nav-main ul {
+  list-style-type: none;
+}
+
+
+.profile-image img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.greeting-message {
+  padding-left: 20px;
+}
+
+.greeting {
+  font-size: 36px;
+  color: #333;
+  font-weight: bold;
+}
+
+.greeting span {
+  color: #ff5722; /* Orange color for "Morning" */
+  font-size: 40px;
+}
+
+.highlight {
+  color: #2196f3; /* Blue color for "Internet" */
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about h2 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.about p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #f1f5f8;
+  line-height: 2.2;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.my-image img{
+  width: 60px;
+} */
+nav {
+  background: #ffffff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.fa-bars {
+  font-size: 1.5rem;
+  color: #e94949;
+  cursor: pointer;
+}
+
+.fa-bars:hover {
+  color: black;
+}
+
+.menu a {
+  color: grey;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+}
+
+.menu a:hover {
+  background: #f8a5a5;
+  color: #e94949;
+  padding-left: 1.5rem;
+}
+
+.menu {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+
+.show-menu {
+  height: 13rem;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+
+/* for tasks */
+
+.task{
+  position: fixed;
+  /* top: 50%; */  
+  bottom: 70px;
+  right: 4px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.3);
+  width: 300px;
+  background-color:yellow;
+  border-radius: 10px;
+  font-size: 20px;
+  margin: 1rem;
+}
+
+.task-data{
+  height: 0rem;
+  overflow: hidden;
+}
+
+.show-task{
+  height: auto;
+  max-height: 25rem;
+  overflow: scroll;
+}
+
+#task-container{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.fa-tasks{
+  cursor: pointer;
+}
+.input{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: 20px;
+  font-family: cursive;
+}
+
+.input::placeholder{
+  color: lightgray;
+}
+
+.list{
+  padding: 0;
+  margin: 0;
+}
+
+.list li{
+  list-style-type: none;
+  padding: 20px 55px 20px 10px;
+  font-family: cursive;
+  border-top: dotted;
+  border-color: darkgray;
+  position: relative;
+}
+
+.list li .fa-trash{
+  color: red;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.list li .fa-check-square{
+  color: green;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li.checked {
+  color: darkgray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-check-square{
+  color: darkgray;
+}
+
+@media (min-width: 800px) {
+  .nav-main {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+  }
+  
+  .nav-header {
+    padding: 0;
+  }
+  .fa-bars {
+    display: none;
+  }
+  
+  .menu {
+    height: auto;
+    display: flex;
+    margin: 0;
+  }
+  
+  .menu a {
+    padding: 1rem;
+    margin: 0 0.5rem;
+  }
+  .menu a:hover {
+    /* padding: 0; */
+    font-size: large;
+    background: transparent;
+  }
+  .task{
+    position: fixed;
+    bottom: 4px;
+    right: 60px;
+  }
+}
+
